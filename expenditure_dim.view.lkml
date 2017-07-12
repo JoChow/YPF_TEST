@@ -91,12 +91,9 @@ view: expenditure_dim {
   }
 
   dimension: name {
-    link: {
-      label: "Link to Investment Page"
-      url: "http://ypfdemo.c55.copperleaf.cloud/YPF_TEST/Copperleaf5/Modules/Expenditures/Expenditure.aspx?code={{code}}"
-    }
     type: string
     sql: ${TABLE}.NAME ;;
+    html: <a href= "http://ypfdemo.c55.copperleaf.cloud/YPF_TEST/Copperleaf5/Modules/Expenditures/Expenditure.aspx?code={{code}}"> {{name}}</a>;;
   }
 
   dimension: operating_unit_code {
