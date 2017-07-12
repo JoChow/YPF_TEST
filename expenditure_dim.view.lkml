@@ -93,7 +93,7 @@ view: expenditure_dim {
   dimension: name {
     type: string
     sql: ${TABLE}.NAME ;;
-    html: <a href= "http://ypfdemo.c55.copperleaf.cloud/YPF_TEST/Copperleaf5/Modules/Expenditures/Expenditure.aspx?code={{code}} target="_blank""> {{name}}</a>;;
+    html: <a href= "http://ypfdemo.c55.copperleaf.cloud/YPF_TEST/Copperleaf5/Modules/Expenditures/Expenditure.aspx?code={{code}}" target="_blank"> {{name}}</a>;;
   }
 
   dimension: operating_unit_code {
