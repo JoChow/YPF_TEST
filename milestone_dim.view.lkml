@@ -23,9 +23,14 @@ view: milestone_dim {
   }
 
   dimension: name {
+    link: {
+      label: "Link"
+      url: "http://ypfdemo.c55.copperleaf.cloud/YPF_TEST/Copperleaf5/Pages/Home/Views/Home.aspx"
+    }
     type: string
     sql: ${TABLE}.NAME ;;
   }
+
 
   dimension: unique_id {
     type: string
