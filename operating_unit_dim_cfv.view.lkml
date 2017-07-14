@@ -32,8 +32,9 @@ view: operating_unit_dim_cfv {
   dimension: value_in_number {
     type:  number
     sql: ${TABLE}.numeric_value ;;
+    # value_format: "0.00"
     html:
-    <div style="float:right;">{{ rendered_value }}</div>;;
+    <div style="float:right;">{{ rendered_value | replace:'.', 'z' | replace: ',','.' | replace: 'z', ',' }}</div>;;
     #value_format: "#.###.###,00;($#.###.###,00)"
   }
 
