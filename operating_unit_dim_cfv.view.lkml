@@ -18,7 +18,7 @@ view: operating_unit_dim_cfv {
     sql: ${TABLE}.NUMERIC_VALUE ;;
     html:
     <div style="float:left;">$</div>
-    <div style="float:right;">{{ rendered_numeric_value }}</div>;;
+    <div style="float:right;">{{ numeric_value }}</div>;;
   }
 
   dimension: operating_unit_dim_id {
