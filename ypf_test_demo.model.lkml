@@ -1,5 +1,9 @@
 connection: "oregon_demo_server"
 
+# to set the cache to be 2 minutes
+persist_for: "0 minutes"
+
+
 # include all the views
 include: "*.view"
 
