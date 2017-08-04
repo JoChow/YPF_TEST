@@ -160,6 +160,13 @@ view: forecast_fact {
     drill_fields: [detail*]
   }
 
+  measure: sum {
+    type:  sum
+    drill_fields: [forecast_value]
+  }
+
+
+
   # ----- Sets of fields for drilling ------
   set: detail {
     fields: [
