@@ -32,6 +32,17 @@ view: month_date_dim {
     sql: ${TABLE}.FISCAL_YEAR_END_MONTH ;;
   }
 
+  dimension: fiscal_month_number {
+    type:  number
+    sql: ${TABLE}.FISCAL_MONTH;;
+  }
+
+
+  measure:  date_month{
+  type:  number
+  sql: ${TABLE}.fiscal_month ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [detail*]
