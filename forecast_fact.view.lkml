@@ -160,9 +160,9 @@ view: forecast_fact {
     drill_fields: [detail*]
   }
 
-  measure: sum {
+  measure: Total_Forecast_value {
     type:  sum
-    drill_fields: [forecast_value]
+    sql: ${TABLE}.FORECAST_VALUE;;
   }
 
 
