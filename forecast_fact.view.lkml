@@ -165,6 +165,10 @@ view: forecast_fact {
     sql: ${TABLE}.FORECAST_VALUE;;
   }
 
+  measure: Total_Forecast_value_1 {
+    type:  sum
+    sql: ${TABLE}.FORECAST_VALUE;;
+  }
 
 
   # ----- Sets of fields for drilling ------
